@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
 
-export default class Sample1 extends Component {
+export default class Sample2 extends Component {
   render() {
     return (
       <div>

@@ -8,30 +8,16 @@ Luigi.setConfig({
         viewUrl: '/sampleapp.html#/home',
         children: [
           {
-            pathSegment: 'sample1',
-            label: 'First',
-            icon: 'nutrition-activity',
-            viewUrl: '/sampleapp.html#/sample1'
+            pathSegment: 'product',
+            label: 'Product List',
+            icon: 'product',
+            viewUrl: '/sampleapp.html#/product'
           },
           {
-            pathSegment: 'sample2',
-            label: 'Second',
-            icon: 'paper-plane',
-            viewUrl: '/sampleapp.html#/sample2'
-          },
-          {
-            category: { label: 'Links', icon: 'cloud' },
-            label: 'Luigi Project',
-            externalLink: {
-              url: 'https://luigi-project.io/'
-            }
-          },
-          {
-            category: 'Links',
-            label: 'React.js',
-            externalLink: {
-              url: 'https://reactjs.org/'
-            }
+            pathSegment: 'service',
+            label: 'Customer service',
+            icon: 'phone',
+            viewUrl: '/sampleapp.html#/service'
           }
         ]
       }
