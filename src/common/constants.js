@@ -1,9 +1,10 @@
-export const products = [
-    { id: 101, name: "Logitech Mouse", price: 45.0, stock: 80 },
-    { id: 102, name: "Logitech Keyboard", price: 50.0, stock: 2 },
-    { id: 103, name: "HP Mouse", price: 35.0, stock: 4 },
-    { id: 104, name: "MacBook Pro", price: 1299.0, stock: 11 },
-    { id: 105, name: "Magic Mouse", price: 40.0, stock: 20 },
-    { id: 106, name: "Brother Printer", price: 235.0, stock: 24 },
-    { id: 107, name: "Iphone X", price: 335.0, stock: 45 }
+export const mockProducts = [
+    { id: 101, name: "Logitech Mouse", price: 45.0, stock: 80, description: 'LIGHTSPEED Wireless Gaming Mouse with HERO Sensor' },
+    { id: 102, name: "Logitech Keyboard", price: 50.0, stock: 22, description: 'A physical keyboard that uses an individual spring and switch for each key. Today, only premium keyboards are built with key switches; however, they were also used in the past, such as in the Model M keyboard from IBM, which used buckling spring switches' },
+    { id: 103, name: "HP Computer Mouse", price: 35.0, stock: 4, description: 'Wireless Gaming Mouse' },
+    { id: 104, name: "Apple MacBook Pro", price: 1299.0, stock: 11, description: 'It features a touch-sensitive OLED display strip located in place of the function keys, a Touch ID sensor integrated with the power button, a butterfly mechanism keyboard similar to the MacBook, and four USB-C ports that also serve as Thunderbolt 3 ports.' },
+    { id: 105, name: "Apple Magic Mouse", price: 40.0, stock: 20, description: 'The Magic Mouse 2 (Apple Magic Mouse 2), is a computer mouse developed and released by Apple Inc. It features a multi-touch acrylic surface for scrolling. ... The mouse features a lithium-ion rechargeable battery and Lightning connector for charging and pairing.' },
+    { id: 106, name: "Brother Printer", price: 235.0, stock: 24, description: 'easy installation with awesome qulity' },
+    { id: 107, name: "iphone 11", price: 335.0, stock: 45, description: 'The iPhone 11 dimensions are 150.9mm x 75.7mm x 8.3mm (H x W x D). It weighs about 194 grams (6.84 ounces).It features a 6.1-inch all-screen LCD display and is powered by Apple new A13 bionic chip with Third-Generation Neural Engine.' },
+    { id: 108, name: "Google Pixel 3a", price: 299.0, stock: 54, description: 'At 5.6 inches, the Google Pixel 3a display is proportionate to the relatively small body of the phone – that is to say, it is rather small. The display is Full HD+ and OLED, with a resolution of 2220 x 1080, and because of the relatively small screen size the pixels per inch count is rather high at 441.' }
 ];

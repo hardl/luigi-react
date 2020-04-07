@@ -42,7 +42,9 @@ export default class Home extends Component {
           <div className="fd-section__header">
             <h1 className="fd-section__title">Home</h1>
           </div>
-          <div className="fd-panel">{this.state.message}</div>
+          <div className="fd-panel">
+              Welcome to Luigi 3C shop!
+          </div>
         </section>
       </div>
     );

@@ -8,10 +8,10 @@ Luigi.setConfig({
         viewUrl: '/sampleapp.html#/home',
         children: [
           {
-            pathSegment: 'product',
-            label: 'Product List',
-            icon: 'product',
-            viewUrl: '/sampleapp.html#/product'
+            pathSegment: 'products',
+            label: 'Products',
+            icon: 'list',
+            viewUrl: '/sampleapp.html#/products'
           },
           {
             pathSegment: 'service',
@@ -25,7 +25,7 @@ Luigi.setConfig({
   },
   settings: {
     header: {
-      title: 'Luigi React App',
+      title: 'Luigi Shop',
       logo: '/logo.png'
     },
     responsiveNavigation: 'simpleMobileOnly'
