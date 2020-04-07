@@ -1,23 +1,31 @@
 import React from 'react';
 import { Message } from '../Components/Message.jsx';
+import { NO_AVAILABLE_PRODUCT_MSG } from '../common/constants.js';
 import '../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
 
-export const List = ({ items }) => {
-    return (
-        <ul className="fd-list">
-            {
-                items.length > 0
-                    ? items.map(({id, name}) => {
-                        const link = `#/productDetail/${id}`;
+export const List = ({ items }) => (
+        (items.length === 0) ? <Message term={NO_AVAILABLE_PRODUCT_MSG} /> 
+        : items.map(({id, name, price}) => {
+                const link = `#/productDetail/${id}`;
 
-                        return (
-                            <li tabIndex={id}  className="fd-list__item" key={id}>
-                                <a href={link} className="fd-link fd-link--emphasized">{ name }</a>
-                            </li>
-                        )
-                    })
-                : <Message term="There is no available product at this moment." />
-            }
-        </ul>
-    );
-};
+                return (
+                    <div className="fd-col--3" key={id}>
+                        <div className="fd-tile">
+                            <div className="fd-tile__media">
+                                <span className="fd-identifier fd-identifier--m sap-icon--product fd-has-background-color-accent-1"></span>
+                            </div>
+                            <div className="fd-tile__content">
+                                <h3 className="fd-tile__title">
+                                    <a href={link} className="fd-link">{ name }</a>
+                                </h3>
+                                <p>
+                                    <span className="fd-badge fd-badge--success fd-badge--filled fd-sap-icon--accept">
+                                        €{ price }
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                )
+            })
+);
