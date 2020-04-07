@@ -5,19 +5,19 @@ Luigi.setConfig({
         pathSegment: 'home',
         label: 'Home',
         icon: 'home',
-        viewUrl: '/sampleapp.html#/home',
+        viewUrl: '/app.html#/home',
         children: [
           {
             pathSegment: 'products',
             label: 'Products',
             icon: 'list',
-            viewUrl: '/sampleapp.html#/products'
+            viewUrl: '/app.html#/products'
           },
           {
             pathSegment: 'service',
             label: 'Customer service',
             icon: 'phone',
-            viewUrl: '/sampleapp.html#/service'
+            viewUrl: '/app.html#/service'
           }
         ]
       }
