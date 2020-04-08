@@ -37,17 +37,20 @@ To Run Test Suite:
 ## Unit Coverage
 * PASS  src/App.test.js
 * PASS  src/views/Home/Home.test.js
+* PASS  src/Components/Message/Message.test.jsx
+* PASS  src/Components/List/List.test.jsx
 * PASS  src/views/Products/Products.test.js
 * PASS  src/views/ProductDetail/ProductDetail.test.js
 
-Test Suites: 4 passed, 4 total
-Tests:       7 passed, 7 total
+Test Suites: 6 passed, 6 total
+Tests:       10 passed, 10 total
 Snapshots:   0 total
-Time:        1.79s
+Time:        3.179s
 
 ## TODO
 This is a very brief list of things that I would love to work on given more time:
 * Apply the best practice on Luigi settings (luigi-config.js)
+* Use [fundamental Library for React](https://github.com/SAP/fundamental-react) instead of css directly
 * Increase unit test coverage
 * Improve UI/UX
 
