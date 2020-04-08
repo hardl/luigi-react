@@ -50,7 +50,6 @@ Time:        3.179s
 ## TODO
 This is a very brief list of things that I would love to work on given more time:
 * Apply the best practice on Luigi settings (luigi-config.js)
-* Use [fundamental Library for React](https://github.com/SAP/fundamental-react) instead of css directly
 * Increase unit test coverage
 * Improve UI/UX
 
