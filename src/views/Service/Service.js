@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
+import '../../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
 
 const Service = () => (
     <div className="fd-page__content">

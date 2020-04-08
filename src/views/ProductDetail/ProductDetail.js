@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Details } from '../Components/Details.jsx';
-import { Message } from '../Components/Message.jsx';
-import { mockProducts, NO_MATCH_PRODUCT_MSG } from '../common/constants.js';
-import '../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
+import { Details } from '../../Components/Details.jsx';
+import { Message } from '../../Components/Message.jsx';
+import { mockProducts, NO_MATCH_PRODUCT_MSG } from '../../common/constants.js';
+import '../../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
 
 const ProductDetail = ({ match }) => {
   const itemId = parseInt(match.params.id);

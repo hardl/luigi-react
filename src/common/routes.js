@@ -1,7 +1,7 @@
-import Home from '../views/home.js';
-import Products from '../views/Products.js';
-import ProductDetail from '../views/ProductDetail.js';
-import Service from '../views/Service.js';
+import Home from '../views/Home/Home.js';
+import Products from '../views/Products/Products.js';
+import ProductDetail from '../views/ProductDetail/ProductDetail.js';
+import Service from '../views/Service/Service.js';
 
 export const ROUTE_BASE = '/app.html#';
 export const ROUTES = [

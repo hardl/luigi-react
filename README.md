@@ -2,8 +2,9 @@
 
 This is a beta e-commerce web application which was implemented by Luigi(React).
 
-* User is able to see all available mocked products.
-* User is able to navigate to product details page when select a product from list.
+* There are two microfront views (Products, Details) implemented in Luigi framework.
+* User is able to see all available products.
+* User is able to navigate to product details page while selecting a product from list.
 
 ## Installation and Setup Instructions
 
@@ -30,9 +31,23 @@ To Run Test Suite:
 ## Reference Framework
 * [Luigi](https://luigi-project.io/) for architecture
 
+## Unit Test Library
+* [React Testing Library](https://github.com/testing-library/react-testing-library)
+
+## Unit Coverage
+* PASS  src/App.test.js
+* PASS  src/views/Home/Home.test.js
+* PASS  src/views/Products/Products.test.js
+* PASS  src/views/ProductDetail/ProductDetail.test.js
+
+Test Suites: 4 passed, 4 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        1.79s
+
 ## TODO
 This is a very brief list of things that I would love to work on given more time:
-* Apply best practice on setting (luigi-config.js)
+* Apply the best practice on Luigi settings (luigi-config.js)
 * Increase unit test coverage
 * Improve UI/UX
 

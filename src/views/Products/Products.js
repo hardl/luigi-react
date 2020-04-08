@@ -1,7 +1,7 @@
 import React from 'react';
-import { List } from '../Components/List.jsx';
-import { mockProducts } from '../common/constants.js';
-import '../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
+import { List } from '../../Components/List.jsx';
+import { mockProducts } from '../../common/constants.js';
+import '../../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
 
 const Products = () => (
     <section className="fd-section">
