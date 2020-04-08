@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
+import '../../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
 
 export const Details = ({ item }) => {
     const { name, price, stock, description } = item;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { List } from '../../Components/List.jsx';
+import { List } from '../../Components/List/List.jsx';
 import { mockProducts } from '../../common/constants.js';
 import '../../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
 

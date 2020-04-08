@@ -1,7 +1,7 @@
 import React from 'react';
-import { Message } from '../Components/Message.jsx';
-import { NO_AVAILABLE_PRODUCT_MSG } from '../common/constants.js';
-import '../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
+import { Message } from '../../Components/Message/Message.jsx';
+import { NO_AVAILABLE_PRODUCT_MSG } from '../../common/constants.js';
+import '../../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
 
 export const List = ({ items }) => (
         (items.length === 0) ? <Message term={NO_AVAILABLE_PRODUCT_MSG} /> 
@@ -9,7 +9,7 @@ export const List = ({ items }) => (
                 const link = `#/productDetail/${id}`;
 
                 return (
-                    <div className="fd-col--3" key={id}>
+                    <div className="fd-col--3" key={id} data-testid="productDetail">
                         <div className="fd-tile">
                             <div className="fd-tile__media">
                                 <span className="fd-identifier fd-identifier--m sap-icon--product fd-has-background-color-accent-1"></span>
