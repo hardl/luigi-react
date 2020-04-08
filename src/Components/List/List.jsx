@@ -5,14 +5,14 @@ import '../../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
 
 export const List = ({ items }) => (
         (items.length === 0) ? <Message term={NO_AVAILABLE_PRODUCT_MSG} /> 
-        : items.map(({id, name, price}) => {
+        : items.map(({id, name, price, icon}) => {
                 const link = `#/productDetail/${id}`;
 
                 return (
                     <div className="fd-col--3" key={id} data-testid="productDetail">
                         <div className="fd-tile">
                             <div className="fd-tile__media">
-                                <span className="fd-identifier fd-identifier--m sap-icon--product fd-has-background-color-accent-1"></span>
+                                <span className={`fd-identifier fd-identifier--m sap-icon--${icon} fd-has-background-color-accent-1`}></span>
                             </div>
                             <div className="fd-tile__content">
                                 <h3 className="fd-tile__title">
