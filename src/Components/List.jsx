@@ -16,11 +16,11 @@ export const List = ({ items }) => (
                             </div>
                             <div className="fd-tile__content">
                                 <h3 className="fd-tile__title">
-                                    <a href={link} className="fd-link">{ name }</a>
+                                    <a href={link} className="fd-link">{name}</a>
                                 </h3>
                                 <p>
                                     <span className="fd-badge fd-badge--success fd-badge--filled fd-sap-icon--accept">
-                                        €{ price }
+                                        €{price}
                                     </span>
                                 </p>
                             </div>

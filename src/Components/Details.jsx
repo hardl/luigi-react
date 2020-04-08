@@ -10,11 +10,11 @@ export const Details = ({ item }) => {
                 <span className="fd-identifier fd-identifier--m sap-icon--product fd-has-background-color-accent-1"></span>
             </div>
             <div className="fd-tile__content">
-                <h1 className="fd-tile__title">{ name }</h1>
-                <div className="fd-tile__text">Price: €{ price }</div>
-                <div className="fd-tile__text">Stock: { stock }</div>
+                <h1 className="fd-has-type-2">{ name }</h1>
+                <div className="fd-has-type-1">Price: €{ price }</div>
+                <div className="fd-has-type-1">Stocks: { stock }</div>
                 <br/>
-                <p>{ description }</p>
+                <p className="fd-has-type-1">{ description }</p>
             </div>
         </div>
     )
