@@ -11,7 +11,15 @@ Luigi.setConfig({
             pathSegment: 'products',
             label: 'Products',
             icon: 'list',
-            viewUrl: '/app.html#/products'
+            viewUrl: '/app.html#/products',
+            keepSelectedForChildren: true,
+            children: [
+              {
+                hideFromNav: true,
+                pathSegment: ':productId',
+                viewUrl: '/app.html#/productDetail/:productId'
+              }
+            ]
           },
           {
             pathSegment: 'service',

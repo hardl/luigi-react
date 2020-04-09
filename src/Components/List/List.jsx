@@ -2,11 +2,12 @@ import React from 'react';
 import { Message } from '../../Components/Message/Message.jsx';
 import { NO_AVAILABLE_PRODUCT_MSG } from '../../common/constants.js';
 import '../../../node_modules/fiori-fundamentals/dist/fiori-fundamentals.css';
+import { linkManager } from '../../../node_modules/@kyma-project/luigi-client';
 
 export const List = ({ items }) => (
         (items.length === 0) ? <Message term={NO_AVAILABLE_PRODUCT_MSG} /> 
         : items.map(({id, name, price, icon}) => {
-                const link = `#/productDetail/${id}`;
+                const link = `#/productDetail/${id}`;                
 
                 return (
                     <div className="fd-col--3" key={id} data-testid="productDetail">
@@ -16,7 +17,7 @@ export const List = ({ items }) => (
                             </div>
                             <div className="fd-tile__content">
                                 <h3 className="fd-tile__title">
-                                    <a href={link} className="fd-link">{name}</a>
+                                    <a href={link} className="fd-link" onClick={() => linkManager().withoutSync().navigate('/home/products/' + id)}>{name}</a>
                                 </h3>
                                 <p>
                                     <span className="fd-badge fd-badge--success fd-badge--filled fd-sap-icon--accept">
